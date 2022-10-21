@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:inputType="numberDecimal"
+        android:hint="Salário (R$)"
+        android:text="0"
+        android:layout_marginTop="16dp"
+        android:id="@+id/salario"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:hint="Gastos (R$)"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/salario"
+        android:layout_marginTop="16dp"
+        android:text="0"
+        android:id="@+id/gastos"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gastos"
+        android:layout_marginTop="28dp"
+        android:text="SEU IMPOSTO DE RENDA SERÁ:"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:id="@+id/label"
+
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/label"
+        android:text="R$ 0"
+        android:textAlignment="center"
+        android:textColor="@color/blue"
+        android:textSize="50dp"
+        android:id="@+id/roubo"
+        />
+
+    <Button
+        android:id="@+id/button_calcula"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="CALCULAR"
+        android:padding="16dp"
+        android:layout_margin="8dp"
+        android:backgroundTint="@color/green"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
